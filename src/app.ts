@@ -6,7 +6,7 @@ import { logger } from './util/Logger';
 class App {
 
     public express: express.Application;
-
+ 
     public constructor() {
         this.express = express();
         this.middlewares();
