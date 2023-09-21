@@ -1,0 +1,37 @@
+{
+  "name": "api-express-ts",
+  "version": "1.0.0",
+  "description": "Api com ExpressJS e Typescript",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domfernando/api-express-ts.git"
+  },
+  "author": "Fernando Domingues",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/domfernando/api-express-ts/issues"
+  },
+  "homepage": "https://github.com/domfernando/api-express-ts#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.17",
+    "@types/pino": "^7.0.5",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "pino": "^8.15.1",
+    "pino-http": "^8.5.0",
+    "pino-pretty": "^10.2.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "sucrase": "^3.34.0",
+    "typescript": "^5.2.2"
+  }
+}
