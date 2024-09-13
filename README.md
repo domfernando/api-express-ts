@@ -19,3 +19,24 @@ Api usando Express e Typescript
 - Nodemom
 - Sucrase
 - pino
+- swagger-express-ui
+- swagger-autogen
+
+#### Gerando documentação
+Adicionar script no package.json
+```json
+  ...
+  "scripts": {
+    ...
+    "swagger": "node ./swagger.js"
+  }
+```
+Depois executar o comando:
+```bash
+npm run swagger
+```
+Para visualizar a documentação
+
+```net
+http://app/docs
+```
